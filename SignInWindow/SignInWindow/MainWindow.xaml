@@ -27,13 +27,13 @@
                 <RowDefinition Height="55" />
             </Grid.RowDefinitions>
 
-            <TextBlock Grid.Row="1" Margin="20 10 20 5" MinHeight="20" VerticalAlignment="Top" Foreground="Azure" FontFamily="Verdana" FontSize="11">Enter Login</TextBlock>
-            <TextBox Name="label" Grid.Row="1" MinWidth="120" MaxHeight="40" MinHeight="15" Margin="20 30 20 20" Padding="10 2 10 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></TextBox>
+            <TextBlock Grid.Row="1" Margin="20 10 20 5" MinHeight="20" VerticalAlignment="Top" Foreground="Azure" FontFamily="Verdana" FontSize="11">Enter mail</TextBlock>
+            <TextBox Name="loginTextBox" Grid.Row="1" MinWidth="120" MaxHeight="40" MinHeight="15" Margin="20 30 20 20" Padding="10 2 10 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></TextBox>
 
             <TextBlock Grid.Row="2" Margin="20 10 20 5" MinHeight="20" VerticalAlignment="Top" Foreground="Azure" FontFamily="Verdana" FontSize="11">Enter Password</TextBlock>
-            <TextBox Grid.Row="2" MinWidth="120" MaxHeight="40" MinHeight="15" Margin="20 30 20 20" Padding="10 2 10 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ></TextBox>
+            <PasswordBox Name="passwordTextBox"  Grid.Row="2" MinWidth="120" MaxHeight="40" MinHeight="15" Margin="20 30 20 20" Padding="10 2 10 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ></PasswordBox>
 
-            <Button Grid.Row="3" Margin="30,25" MinHeight="25" Foreground="Blue">Confirm</Button>
+            <Button Click="Button_Click" Grid.Row="3" Margin="30,25" MinHeight="25" Foreground="Blue">Confirm</Button>
 
         </Grid>
 
