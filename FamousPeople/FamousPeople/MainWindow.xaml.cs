@@ -36,6 +36,7 @@ namespace FamousPeople
                 int personID = Convert.ToInt32(textBoxID.Text);
                 _currentPerson = _db.GetPerson(personID);
                 gridMain.DataContext = _currentPerson;
+                MainImage.Source = new BitmapImage(new Uri($"/Resources/{_currentPerson.ImageId}.jpg", UriKind.Relative));
             }
             catch (Exception)
             {
@@ -82,6 +83,7 @@ namespace FamousPeople
         private void listPersons_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             gridMain.DataContext = listPersons.SelectedItem;
+            MainImage.Source = new BitmapImage(new Uri($"/Resources/{((Person)listPersons.SelectedItem).ImageId}.jpg", UriKind.Relative));
         }
     }
 }

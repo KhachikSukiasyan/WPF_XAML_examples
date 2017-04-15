@@ -52,6 +52,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -132,6 +133,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Persons.mdf</DependentUpon>
     </Content>
+    <Resource Include="Resources\Andrew.jpg" />
+    <Resource Include="Resources\Steve.jpg" />
+    <Resource Include="Resources\Mark.jpg" />
+    <Resource Include="Resources\Linus.jpg" />
+    <Resource Include="Resources\Bill.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

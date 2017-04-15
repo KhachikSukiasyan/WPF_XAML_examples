@@ -53,10 +53,10 @@ namespace FamousPeople.Classes
                 SqlCommand command = new SqlCommand($"UPDATE PersonsTable SET FirstName={fName},LastName={lName},Description={person.Description} WHERE Id={personId}", connection);
 
 
-                command.Parameters.AddWithValue("FirstName",  person.Name.Split(' ')[0]);
-                command.Parameters.AddWithValue("Lastname", person.Name.Split(' ')[1]);
-                command.Parameters.AddWithValue("Description", person.Description);
-                command.Parameters.AddWithValue("Id", personId);
+                command.Parameters.AddWithValue("firstname",  person.Name.Split(' ')[0]);
+                command.Parameters.AddWithValue("lastname", person.Name.Split(' ')[1]);
+                command.Parameters.AddWithValue("description", person.Description);
+                command.Parameters.AddWithValue("ID", personId);
                 connection.Open();
                 command.ExecuteNonQuery();
                 connection.Close();

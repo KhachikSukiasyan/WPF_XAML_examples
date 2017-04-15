@@ -45,7 +45,7 @@
 
         <TextBlock Grid.Row="2" HorizontalAlignment="Center" Text="Человек" Foreground="White" VerticalAlignment="Center" />
         <TextBlock Grid.Row="4" HorizontalAlignment="Center" Text="Описание" Foreground="White" VerticalAlignment="Center" />
-        <Image Name="Image" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Margin="10"></Image>
+        <Image Name="MainImage" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Margin="10"></Image>
 
     </Grid>
 </Window>
