@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FamousPeople"
         mc:Ignorable="d"
-        Title="Люди ИТ" Height="350" Width="575">
+        Title="Люди ИТ" Height="350" Width="675">
     <Grid Background="Gray" Name="gridMain">
         <Grid.ColumnDefinitions>
             <ColumnDefinition  Width="116*"/>
-            <ColumnDefinition  Width="347*"/>
+            <ColumnDefinition  Width="400*"/>
             <ColumnDefinition  Width="260*"/>
         </Grid.ColumnDefinitions>
 
@@ -24,28 +24,28 @@
 
         <ListBox Name="listPersons" 
                  Visibility="Collapsed" 
-                 Grid.ColumnSpan="2" 
+                 Grid.ColumnSpan="3" 
                  Height="90" 
                  Margin="10"
                  SelectionChanged="listPersons_SelectionChanged">
         </ListBox>
 
-        <StackPanel Grid.Row="1" Grid.ColumnSpan="3" 
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" 
                     Orientation="Horizontal" Background="Gray">
 
-            <TextBox Name="textBoxID" VerticalAlignment="Center" Width="120" Margin="10,0,10,0" />
+            <TextBox Name="textBoxID" VerticalAlignment="Center" Width="60" Margin="10,0,10,0" />
             <Button Content="Получить человека по ID" Name="buttonGetPerson" VerticalAlignment="Center" Padding="2" Click="buttonGetPerson_Click" />
             <Button Content="Обновить данные в базе" Name="UpdatePerson" Padding="2" VerticalAlignment="Center" Margin="10,0,0,0" Click="Update_Click"></Button>
             <Button Content="Список" Name="buttonShowList" Margin="10,0,0,0" Padding="2" VerticalAlignment="Center" Click="buttonShowList_Click" />
         </StackPanel>
 
-        <TextBox Text="{Binding Title}" HorizontalAlignment="Stretch" Name="textBoxTitle" VerticalAlignment="Stretch" Grid.Row="2" Margin="5" Grid.Column="1" />
+        <TextBox Text="{Binding Name}" HorizontalAlignment="Stretch" Name="textBoxTitle" VerticalAlignment="Stretch" Grid.Row="2" Margin="5" Grid.Column="1" />
         
         <TextBox Text="{Binding Description}" TextWrapping="Wrap" HorizontalAlignment="Stretch" Name="textBoxDesc" VerticalAlignment="Stretch" Grid.Row="4" Margin="5" Grid.Column="1" MinHeight="150" />
 
-        <TextBlock Grid.Row="2" HorizontalAlignment="Center" Text="Человек" VerticalAlignment="Center" />
-        <TextBlock Grid.Row="4" HorizontalAlignment="Center" Text="Описание" VerticalAlignment="Center" />
-        <Image Name="Image" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Margin="5"></Image>
+        <TextBlock Grid.Row="2" HorizontalAlignment="Center" Text="Человек" Foreground="White" VerticalAlignment="Center" />
+        <TextBlock Grid.Row="4" HorizontalAlignment="Center" Text="Описание" Foreground="White" VerticalAlignment="Center" />
+        <Image Name="Image" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Margin="10"></Image>
 
     </Grid>
 </Window>
